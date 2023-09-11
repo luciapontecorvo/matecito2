@@ -3,13 +3,451 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
     <title>Matecito</title>
 </head>
 <body>
 
+    <!-- Header -->
+
+    <header class="header">
+        <img class="bg" src="./multimedia/header.png" alt="imagen del header">
+        <div class="menu container">
+            <a href="#" class="logo">Matecito</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./multimedia/logo.png" class="menu-icono" alt="">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Cómo Comprar</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><style>svg{fill:#93918e}</style><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/> </svg>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody></tbody>
+
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#93918e}</style><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg> -->
+
+
+                    <!-- <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div> -->
+
+            </div>
+
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>¡Compra los mejores mates!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vel quisquam inventore at quis ea?</p>
+                <a href="#" class="btn-1">¡Compra aqui!</a>
+            </div>
+
+        </div>
+
+    </header>
+
     <!-- Cards -->
 
-    
-    
+    <section class="productos1 container">
+        <h2>Productos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+        <div class="productos1-content">
+
+            <div class="productos-1">
+                <img src="./multimedia/mate.png" alt="mate png">
+                <h3>Mates</h3>
+            </div>
+
+            <div class="productos-1">
+                <img src="./multimedia/termo.png" alt="termo png">
+                <h3>Termos</h3>
+            </div>
+
+            <div class="productos-1">
+                <img src="./multimedia/bombilla.png" alt="bombillas png">
+                <h3>Bombillas</h3>
+            </div>
+
+            <div class="productos-1">
+                <img src="./multimedia/matera.png" alt="matera png">
+                <h3>Materas</h3>
+            </div>
+
+            <div class="productos-1">
+                <img src="./multimedia/yerba.png" alt="yerba png">
+                <h3>Yerbas</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <main class="products container">
+
+        <h2>Nuestros Productos</h2>
+
+        <div class="box-container" id="lista-1">
+
+            <div class="box">
+                <img src="./multimedia/matecamioneropremium.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Camionero Negro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/matecamioneropremium2.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Camionero Marron</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/matealpaca.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Alpaca</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/matelabrado.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Labrado</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/matealgarrobo.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Algarrobo</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/mateescudoarg.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Escudo Argentina</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/mateescudoboca.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Escudo Boca</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/mateescudoriver.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Escudo River</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/mateimperialbronce.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Imperial Bronce</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/matetorpedo.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Torpedo</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/matetorpedoalpaca.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mate Torpedo Alpaca</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/termopersonalizado.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Termo Clasico Personalizado</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/termostanleyazul.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Termo Stanley Azul</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="13">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/termostanleynegro.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Termo Stanley Negro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="14">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/termostanleyrojo.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Termo Stanley Rojo</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="15">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/termostanleyverde.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Termo Stanley Verde</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="16">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/termostanleygold.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Termo Stanley Gold</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="17">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/termostanleyblack.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Termo Stanley Black</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="18">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/bombillaaceroinoxidable.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Bombilla Acero Inoxidable</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="19">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/bombillaalpaca.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Bombilla Alpaca</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="20">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/bombillaniquelada.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Bombilla Aniquelada</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="21">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/bombillon.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Bombillon</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="22">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/bombillonalpacaybronce.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Bombillon Alpaca y Bronce</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="23">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/bombillonrecto.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Bombillon Recto</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="24">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/materamarron.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Matera Marron</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="25">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/materanegro.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Matera Negra</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="26">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/yerbacanarias.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Yerba Canarias</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="27">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/yerbacanarias-teverde.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Yerba Canarias té verde y jengibre</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="28">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/yerbacanarias-terojo.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Yerba Canarias té rojo y centella</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="29">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/yerbasara.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Yerba Sara tradicional</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="30">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/yerbasarasuave.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Yerba Sara extrasuave</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="31">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./multimedia/yerbabaldo.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Yerba Baldo</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="32">Agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btn-2" id="load-more">Cargar más</div>
+
+    </main>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

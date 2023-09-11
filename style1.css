@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #d2d2d26e;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    position: relative;
+    border: 1px solid red;
+}
+
+.bg{
+    position:absolute;
+    width: 650px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 25px;
+    color: #93918e;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    color: #93918e;
+    display: block;
+}
+
+
+.menu .navbar ul li a:hover{
+    color: black;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100px;
+    z-index: 1;
+    /* background-color: black; */
+    padding: 20px;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+}
+
+th, td{
+    color: #93918e;
+}
+
+.borrar{
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #93918e;
+    font-weight: 800;
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-txt{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 65px;
+    color: #93918e;
+    margin-bottom: 35px;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #93918e;
+    margin-bottom: 45px;
+}
+
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 25px;
+    background-color: #93918e;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1:hover {
+    background-color: #c8cbce;
+}
+
+.productos {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 55px;
+    color: #93918e;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #93918e;
+    margin-bottom: 45px;
+}
+
+.productos1-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos-1 {
+    display: flex;
+    align-items: center;
+    background-color: #93918e;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.productos-1 h3 {
+    font-size: 16px;
+    color:black;
+    font-weight: 600;
+}
+
+.productos-1 img {
+    width: 50px;
+    margin-right: 25px;
+}
+
+.productos {
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+.box-container {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    border-top: 2px solid #93918e;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4) {
+    display: inline-block;
+}
+
+.box img {
+    width: 120px;
+}
+
+.product-txt h3 {
+    font-size: 20px;
+    color: #93918e;
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 25px;
+}
+
+.precio {
+    font-size: 15px;
+    color:black;
+}
+
+.btn-2 {
+    background-color: #93918e;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 13px 35px;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-2:hover {
+    background-color: #c8cbce;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: #93918e;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn-3:hover {
+    background-color: #c8cbce;
+}
