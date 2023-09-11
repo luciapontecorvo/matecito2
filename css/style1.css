@@ -1,0 +1,46 @@
+.box-container {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    border-top: 2px solid #93918e;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5) {
+    display: inline-block;
+}
+
+.box img {
+    width: 120px;
+}
+
+
+.precio {
+    font-size: 15px;
+    color:black;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: #93918e;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn-3:hover {
+    background-color: #c8cbce;
+}
